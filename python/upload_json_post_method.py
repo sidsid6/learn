@@ -14,9 +14,7 @@ from collections import OrderedDict
 import numpy as np
 import pandas as pd
 
-#url = "http://125.140.110.217:44242/api/query"
-new_url = "http://125.140.110.217:44242/api/put"
-
+url = "http://125.140.110.217:44242/api/query"
 
 query_parameter = {
     "start": "2014-06-01 00:00:00",
