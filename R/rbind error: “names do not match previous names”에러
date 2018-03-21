@@ -1,0 +1,2 @@
+rbind error: “names do not match previous names”
+합치려는 두개 혹은 그이상의 파일 데이터변수의 컬럼명이 일치하지 않을때 발생.
