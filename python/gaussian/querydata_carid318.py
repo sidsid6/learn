@@ -43,7 +43,7 @@ fuel = {
     "metric" : "__fixtest.inst-dlyf__"
 }
 
-url = "http://125.140.110.217:54242/api/query"
+url = "현재사용하고있는 서버주소 및 포트/api/query"
 
 
 """ 쿼리 하려는 tag """
