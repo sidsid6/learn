@@ -1,8 +1,8 @@
-https://medium.com/@rkttu/start-java-dev-with-win-10-402cb91126fd
+출처 : https://medium.com/@rkttu/start-java-dev-with-win-10-402cb91126fd
 
-https://medium.com/@rkttu/windows-10에서-리눅스용-프로그램-설치하고-실행하기-2cb0d7892d12
+출처 : https://medium.com/@rkttu/windows-10에서-리눅스용-프로그램-설치하고-실행하기-2cb0d7892d12
 
-설치하면서 생겼던 오류
+실행 or 설치하면서 생겼던 오류
 
 1. $ nautilus
 Failed to connect to Mir: Failed to connect to server socket: No such file or directory
