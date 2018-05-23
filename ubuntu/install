@@ -1,0 +1,56 @@
+https://medium.com/@rkttu/start-java-dev-with-win-10-402cb91126fd
+
+https://medium.com/@rkttu/windows-10에서-리눅스용-프로그램-설치하고-실행하기-2cb0d7892d12
+
+설치하면서 생겼던 오류
+
+1. $ nautilus
+Failed to connect to Mir: Failed to connect to server socket: No such file or directory
+Unable to init server: Could not connect: Connection refused
+
+- Xming server가 켜지지 않아서 생기는 오류 => 해결법 : ubuntu 터미널에 'export DISPLAY=:0' 입력
+
+2. $ sudo pip install matplotlib
+Traceback (most recent call last):
+      File "<string>", line 1, in <module>
+      File "/tmp/pip-install-r8kUrC/subprocess32/setup.py", line 120, in <module>
+        main()
+      File "/tmp/pip-install-r8kUrC/subprocess32/setup.py", line 114, in main
+        'Programming Language :: Python :: Implementation :: CPython',
+      File "/usr/lib/python2.7/distutils/core.py", line 151, in setup
+        dist.run_commands()
+      File "/usr/lib/python2.7/distutils/dist.py", line 953, in run_commands
+        self.run_command(cmd)
+      File "/usr/lib/python2.7/distutils/dist.py", line 972, in run_command
+        cmd_obj.run()
+      File "/home/seungil/distribute-0.7.3/setuptools/command/install.py", line 53, in run
+        return _install.run(self)
+      File "/usr/lib/python2.7/distutils/command/install.py", line 601, in run
+        self.run_command('build')
+      File "/usr/lib/python2.7/distutils/cmd.py", line 326, in run_command
+        self.distribution.run_command(command)
+      File "/usr/lib/python2.7/distutils/dist.py", line 972, in run_command
+        cmd_obj.run()
+      File "/usr/lib/python2.7/distutils/command/build.py", line 128, in run
+        self.run_command(cmd_name)
+      File "/usr/lib/python2.7/distutils/cmd.py", line 326, in run_command
+        self.distribution.run_command(command)
+      File "/usr/lib/python2.7/distutils/dist.py", line 972, in run_command
+        cmd_obj.run()
+      File "/tmp/pip-install-r8kUrC/subprocess32/setup.py", line 41, in run
+        self.run_command(command)
+      File "/usr/lib/python2.7/distutils/cmd.py", line 326, in run_command
+        self.distribution.run_command(command)
+      File "/usr/lib/python2.7/distutils/dist.py", line 972, in run_command
+        cmd_obj.run()
+      File "/tmp/pip-install-r8kUrC/subprocess32/setup.py", line 26, in run
+        raise RuntimeError(configure_command + ' failed.')
+    RuntimeError: sh ./configure failed.
+
+    ----------------------------------------
+Command "/usr/bin/python -u -c "import setuptools, tokenize;__file__='/tmp/pip-install-r8kUrC/subprocess32/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" install --record /tmp/pip-record-bxN3lK/install-record.txt --single-version-externally-managed --compile" failed with error code 1 in /tmp/pip-install-r8kUrC/subprocess32/
+
+- 원인은 잘 모르겠지만 해결방법
+ 1. $ sudo apt-get install gcc
+ 2. $ sudo apt-get update
+ 3. $ sudo python -mpip install matplotlib
