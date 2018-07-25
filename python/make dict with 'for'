@@ -1,0 +1,8 @@
+a=[1,2,3,4]
+b=['a','b','c','d']
+c=dict()
+
+for k,v in zip(a,b):
+  c[k]=v
+
+print c
