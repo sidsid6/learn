@@ -14,7 +14,7 @@ jir = JIRA(server, basic_auth=(user,apikey))
 for project in jir.projects():
     print(project)
 
-#프로젝트 issue key  
+#프로젝트 issue key  , 결과값 str 반환
 jql = 'project = PRC1'
 issues=jir.search_issues(jql, maxResults=10000)
 
@@ -22,7 +22,7 @@ for issue in issues :
     issue = jir.issue(issue)
     print(issue)
 
-#이슈 key로 summary 가져오기
+#이슈 key로 summary 가져오기 , 결과값 str 반환
 iss = jir.issue('prc1-2')
 sum = iss.fields.summary
 print(sum)
