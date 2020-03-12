@@ -8,6 +8,9 @@ options = {
  'server': server
 }
 
+# 이슈 생성 시,   1.project명  2.summary  3.description  4.issuetype 이 필수로  
+
+
 # 방법 1 
 iss = jira.issue('issue key')
 new_issue = jira.create_issue(project='project name', summary='요약내용', description='설명', issuetype={'name': 'Bug'})
