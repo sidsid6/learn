@@ -32,8 +32,8 @@ for i in query['issues']:
 #삭제하고자 하는 첨부파일 id 확인 후, 제거
 text1=input("제거할 첨부파일의 id를 입력하세요 : ") #10008 입력
 for i in range(0,len(query['issues'][0]['fields']['attachment'])):
-    if query['issues'][i]['fields']['attachment'][0]['id']==text1:
-        jira.delete_attachment(query['issues'][i]['fields']['attachment'][0]['id'])
+    if query['issues'][0]['fields']['attachment'][i]['id']==text1:
+        jira.delete_attachment(query['issues'][0]['fields']['attachment'][i]['id'])
         break;
     else:
         pass
@@ -42,7 +42,7 @@ for i in range(0,len(query['issues'][0]['fields']['attachment'])):
 text1=input("제거할 첨부파일유형 포함 파일명을 입력하세요.(ex: abc.png) : ")
 for i in range(0,len(query['issues'][0]['fields']['attachment'])):
     if query['issues'][0]['fields']['attachment'][i]['filename']==text1:
-        jira.delete_attachment(query['issues'][i]['fields']['attachment'][0]['id'])
+        jira.delete_attachment(query['issues'][0]['fields']['attachment'][i]['id'])
         break;
     else:
         pass
