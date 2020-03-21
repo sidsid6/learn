@@ -10,7 +10,4 @@ options = {
 
 jir = JIRA(server, basic_auth=(user,apikey))
 
-#프로젝트 명
-for project in jir.projects():
-    print(project)
-
+print(jir.projects())
