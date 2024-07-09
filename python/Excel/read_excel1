@@ -21,6 +21,7 @@ sheet1 = pd.read_excel(file_name, sheet_name = "test1")
 
 from openpyxl import load_workbook
 
+# 엑셀 파일 읽기
 file_name = "test.xlsx"
 lwb = load_workbook(file_name)
 
