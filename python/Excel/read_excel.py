@@ -30,3 +30,5 @@ sheetnames = lwb.sheetnames
 
 # 특정 시트 불러오기
 sheet1 = lwb.get_sheet_by_name("test1")
+
+sheet2 = lwb["test1"]
